@@ -46,7 +46,8 @@ Pano Gamitin
                 print("recording Started")
                 gesture = "2Joints"
 ```
-Kung gusto nyo magrecord ng ibang word, kunwari yung word na tite, Sa kahit anong line don, palitan nyo lang yung `gesture =`, kunwari yung `gesture = "A"`, gagawin mong `gesture = "tite"`, tapos, pagmagrerecord, yung pipindutin mo, yung nasa `keyboard.is_pressed("A")`
+Kung gusto nyo magrecord ng ibang word, kunwari yung word na tite, Sa kahit anong line don, palitan nyo lang yung `gesture =`, kunwari yung `gesture = "A"`, gagawin mong `gesture = "tite"`, tapos, pagmagrerecord, yung pipindutin mo, yung nasa `keyboard.is_pressed("A")` 
+
 7. Run nyo na yung DataSetCollector.py gamit `py -3 DataSetCollector.py`
 8. Tapos pindutin nyo na yung keyword. 
 9. Yung pagrerecord, ay 30 fps, nagcocollect ng 30 frames, ibig sabihin, may isang segundo ka para gawin yung sign language habang nagrerecord. 
