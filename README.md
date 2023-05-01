@@ -9,7 +9,7 @@ How to use?
 6. Unzip the ZIP file anywhere but remember the location
 7. Open the folder of the DataSetCollector
 8. Type CMD in the folder
-9. (Optional) If CMD not opened in folder, change directory to it by right-clicking the folder, then "Properties", there you will see the Location (example: C:\Users\Jocher\Desktop), copy the location then type in CMD `cd "PASTE THE LOCATION HERE"`
+9. (Optional) If CMD not opened in folder, change directory to it by right-clicking the folder, then "Properties", there you will see the Location (example: C:\Users\Jocher\Desktop), copy the location then type in CMD `cd "PASTE THE LOCATION HERE"` then another `cd DataSetCollector-main`
 10. Type and Enter `py -3 -m pip install -r requirements.txt`
 11. Open DataSetCollector.py in any file editor and when you scroll down, you will see the following lines of code:
 ```py
