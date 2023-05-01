@@ -1,13 +1,17 @@
 # DataSetCollector
 
-Pano Gamitin 
-1. Download muna python dito https://www.python.org/downloads/
-2. Run nyo yung installer, sa installer, may option na Add Python.exe to path. check nyo yon, tapos Install Now
-3. Download nyo tong repository na to. Sa upper right, may makikita kayo <> Code, pindutin nyo yon tapos download as zip
-4. Unzip nyo kahit saan, tandaan nyo yung file location kung saan nyo inextract
-5. Bukas kayo ng cmd sa kung saan nyo inextract, kunwari ako, inextract ko sa C:\Users\Magic Media\Desktop\DataSetCollector-main, change directory muna sa folder na yon
-`cd C:\Users\Magic Media\Desktop\DataSetCollector-main`, tapos run nyo `py -3 -m pip install -r requirements.txt`
-6. Buksan nyo yung DataSetCollector.py sa kahit anong file editor, sa baba, makikita nyo yubg mga lines na 
+How to use?
+1. Download Python 3.10.11 in https://www.python.org/downloads/release/python-31011/
+2. Run the installer, press "Add Python.exe to path"
+3. Press "Install Now"
+4. In the top-right corner of this repository, click the green button "<> Code"
+5. Press "Download ZIP"
+6. Unzip the ZIP file anywhere but remember the location
+7. Open the folder of the DataSetCollector
+8. Type CMD in the folder
+9. (Optional) If CMD not opened in folder, change directory to it by right-clicking the folder, then "Properties", there you will see the Location (example: C:\Users\Jocher\Desktop), copy the location then type in CMD `cd "PASTE THE LOCATION HERE"`
+10. Type and Enter `py -3 -m pip install -r requirements.txt`
+11. Open DataSetCollector.py in any file editor and when you scroll down, you will see the following lines of code:
 ```py
     if(results.multi_hand_landmarks):
         for hand_landmarks in results.multi_hand_landmarks:
@@ -46,9 +50,9 @@ Pano Gamitin
                 print("recording Started")
                 gesture = "2Joints"
 ```
-Kung gusto nyo magrecord ng ibang word, kunwari yung word na tite, Sa kahit anong line don, palitan nyo lang yung `gesture =`, kunwari yung `gesture = "A"`, gagawin mong `gesture = "tite"`, tapos, pagmagrerecord, yung pipindutin mo, yung nasa `keyboard.is_pressed("A")` 
-
-7. Run nyo na yung DataSetCollector.py gamit `py -3 DataSetCollector.py`
-8. Tapos pindutin nyo na yung keyword. 
-9. Yung pagrerecord, ay 30 fps, nagcocollect ng 30 frames, ibig sabihin, may isang segundo ka para gawin yung sign language habang nagrerecord. 
-10. Ulitin mo yung pagrerecord hanggang maka kuha ka ng 30 na data. Pag gusto mo magrecord ng ibang words, palitamn mo lang yung nasa gesture
+12. To record a different word, replace the `gesture = "WORD"` to any other word, for example `gesture = "Hello"`, `gesture = "Thank_you"`
+13. To initiate recording, press the key that is in `keyboard.is_pressed("A")`, you can change this to any other key
+14. Run the DataSetCollector.py by typing in the same CMD `py -3 DataSetCollector.py`
+15. The DataSetCollector collects the position of the hand in the last 30 frames and will be collected within one second.
+16. Keep recording until you have recorded 50 to 100 data.
+17. Update the provided spreadsheet and upload the data.
